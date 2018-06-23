@@ -19,7 +19,7 @@ The dual learning algorithm is an online learning framework that directly learns
     		/set1.valid.txt # the data used for validation
     		/set1.test.txt # the data used for testing
 
-    3. Randomly sample 10% of data (lines) from set1.train.txt and replace it. We only use 10% of the training data to train the initial ranker.
+    3. Randomly sample 1% of data (lines) from set1.train.txt and replace it. We only use 10% of the training data to train the initial ranker.
 
     4. Train SVMrank with the data and output the model. For detailed training instructions, please refer to https://www.cs.cornell.edu/people/tj/svm_light/svm_rank.html.
 

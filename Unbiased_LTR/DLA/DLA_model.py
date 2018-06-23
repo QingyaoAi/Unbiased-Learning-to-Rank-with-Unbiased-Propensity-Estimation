@@ -82,7 +82,7 @@ class DLA(object):
 		self.click_model = click_model
 
 		self.hparams = tf.contrib.training.HParams(
-			learning_rate=0.5, 				# Learning rate.
+			learning_rate=0.05, 				# Learning rate.
 			#learning_rate_decay_factor=0.8, # Learning rate decays by this much.
 			max_gradient_norm=5.0,			# Clip gradients to this norm.
 			#reverse_input=True,				# Set to True for reverse input sequences.
