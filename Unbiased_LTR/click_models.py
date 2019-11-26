@@ -1,5 +1,6 @@
 import os,sys
 import random, json
+from six.moves import xrange
 
 
 def loadModelFromJson(model_desc):

@@ -86,7 +86,8 @@ class DLA(object):
 			#learning_rate_decay_factor=0.8, # Learning rate decays by this much.
 			max_gradient_norm=5.0,			# Clip gradients to this norm.
 			#reverse_input=True,				# Set to True for reverse input sequences.
-			hidden_layer_sizes=[512, 256, 128],		# Number of neurons in each layer of a RankNet. 
+			hidden_layer_sizes=[512, 256, 128],		# Number of neurons in each layer of a RankNet.
+			num_layers=4,
 			loss_func='click_weighted_softmax_cross_entropy',			# Select Loss function
 			logits_to_prob='softmax',		# the function used to convert logits to probability distributions
 			ranker_learning_rate=-1.0, 		# The learning rate for ranker (-1 means same with learning_rate).
