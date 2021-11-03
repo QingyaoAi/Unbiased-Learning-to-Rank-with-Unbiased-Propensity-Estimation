@@ -1,6 +1,7 @@
 # Overview #
 
-🔥**News: A new implementation of this package with better documentations can be found in [ULTRA](https://github.com/ULTR-Community/ULTRA).**
+🔥**News: A new TensorFlow implementation of this package with better documentations can be found in [ULTRA](https://github.com/ULTR-Community/ULTRA).**
+🔥**News: A new PyTorch implementation of this package can be found in [ULTRA_pytorch](https://github.com/ULTR-Community/ULTRA_pytorch).**
 
 This is an implementation of the inverse propensity weighting algorithm (IPW_rank) and the Dual Learning Algorithm (DLA) for unbiased learning to rank <1>. Please cite the following paper if you plan to use it for your project：
     
