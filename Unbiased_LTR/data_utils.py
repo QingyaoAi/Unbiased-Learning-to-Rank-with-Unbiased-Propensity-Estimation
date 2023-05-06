@@ -17,9 +17,11 @@ import numpy as np
 import json
 import random
 import os
+from six.moves import xrange
+
 
 class Raw_data:
-	def __init__(self, data_path = None, file_prefix = None, rank_cut=100000):
+	def __init__(self, data_path = None, file_prefix = None, rank_cut=500):
 		if data_path == None:
 			self.embed_size = -1
 			self.rank_list_size = -1
@@ -33,7 +35,7 @@ class Raw_data:
 
 		settings = json.load(open(data_path + 'settings.json'))
 		self.embed_size = settings['embed_size']
-		self.rank_list_size = rank_cut if rank_cut<settings['rank_cutoff'] else settings['rank_cutoff']
+		self.rank_list_size = rank_cut
 
 		self.features = []
 		self.dids = []
@@ -88,7 +90,7 @@ class Raw_data:
 				#self.initial_scores[i] += [0.0] * (self.rank_list_size - len(self.initial_scores[i]))
 
 
-def read_data(data_path, file_prefix, rank_cut = 100000):
+def read_data(data_path, file_prefix, rank_cut = 500):
 	data = Raw_data(data_path, file_prefix, rank_cut)
 	return data
 

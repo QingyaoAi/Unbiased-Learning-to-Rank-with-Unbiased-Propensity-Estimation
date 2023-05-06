@@ -49,6 +49,8 @@ tf.app.flags.DEFINE_boolean("decode_train", False,
 # To be discarded.
 tf.app.flags.DEFINE_boolean("feed_previous", False,
                             "Set to True for feed previous internal output for training.")
+tf.app.flags.DEFINE_boolean("self_test", False,
+                            "Set to True for self-testing.")
 
 
 
